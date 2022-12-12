@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+<head>
+    <link rel="stylesheet"href="css/basic.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="arithmetic.js"></script>
+
+<script>
+        function imgchange(){
+            document.getElementById('img').src="file:///C:/Users/user33/Desktop/assets/3.jpeg";
+        }
+        function txtchange(){
+            document.getElementById('demo').innerHTML="hi Abhinayee"
+            
+        }
+        function csschange(){
+            document.getElementById('cricket').style.fontSize = "100px";
+            document.getElementById('cricket').style.color = "pink";
+            document.getElementById('cricket').style.fontFamily = "arial";
+            document.getElementById('cricket').style.textAlign = "center";
+        }
+        function add(){
+                let x;
+                let y;
+                x=2
+                y=3
+                let z=x+y;
+                document.getElementById('demo').innerHTML=x+y;
+       }
+       function sub(){
+            let x;
+            let y;
+            x=2
+            y=3
+            let z=x-y;
+            document.getElementById('demo').innerHTML=x-y;
+       }
+</script>
+</head>
+<body>
+<img id='img' src="file:///C:/Users/user33/Desktop/ab.webp">
+<p id="demo">this is my image</p>
+<button type="button" onclick="imgchange()">picchange</button>
+<p id="demo">Javascript can change hte HTML</p>
+<button type="button" onclick="txtchange()">click me</button>
+<p id="cricket">Abhinayee</p>
+<button type="button" onclick="csschange()">csschange</button>
+<button type="button" onclick="add()">add</button>
+<button type="button" onclick="sub()">sub</button>
+</body>
+</html>
