@@ -4,25 +4,27 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <script src="js/bootstrap.min.js"></script>
         <link href="css/basis.css" rel="stylesheet">
+        <script src="js/resume.js"></script>
     </head>
     <body>
+      <img src="file:///C:/Users/user33/Desktop/habib.jfif" width="100px" height="100px" align="right">
         <center><h2>HABIB IT SOLUTION</h2></center>
         <form class="row">
             <div class="col-md-4">
-              <label for="validationDefault01" class="form-label">First Name</label>
-              <input type="text" class="form-control" id="validationDefault01" required>
+              <label for="validationDefault01" class="form-label">firstname</label>
+              <input type="text" id="firstname" class="form-control" id="validationDefault01" required>
             </div>
             <div class="col-md-4">
-              <label for="validationDefault02" class="form-label">Middle Name</label>
-              <input type="text" class="form-control" id="validationDefault02">
+              <label for="validationDefault02" class="form-label">middlename</label>
+              <input type="text" id="middlename" class="form-control" id="validationDefault02">
             </div>
             <div class="col-md-4">
-              <label for="validationDefault02" class="form-label">Last Name</label>
-              <input type="text" class="form-control" id="validationDefault02" required>
+              <label for="validationDefault02" class="form-label">lastname</label>
+              <input type="text" id="lastname" class="form-control" id="validationDefault02" required>
             </div>
             <div class="col-md-4">
-              <label for="validationDefault02" class="form-label">DOB</label>
-              <input type="text" class="form-control" id="validationDefault02" required>
+              <label for="validationDefault02" class="form-label">DateOfBirth</label>
+              <input type="text" class="form-control" id="DateOfBirth" id="validationDefault02" required>
             </div>
             <div class="col-md-4">
               <label for="validationDefault02" class="form-label">Gender</label>
@@ -37,8 +39,8 @@
               <input type="text" class="form-control" id="validationDefault02" required>
             </div>
             <div class="col-md-6">
-              <label for="validationDefault02" class="form-label">Email Id</label>
-              <input type="text" class="form-control" id="validationDefault02" required>
+              <label for="validationDefault02" class="form-label">EmailId</label>
+              <input type="text" id="mail" class="form-control" id="validationDefault02" required>
             </div>
             <div class="col-md-6">
               <label for="validationDefault02" class="form-label">Password</label>
@@ -57,16 +59,25 @@
               <label for="validationDefault05" class="form-label">Zip</label>
               <input type="text" class="form-control" id="validationDefault05" required>
             </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit</button>
+            <div>
+              <label for="formFileLg" class="form-label">Aadhar Number</label>
+              <input class="form-control form-control-lg" id="formFileLg" type="file">
+            </div>
+            <div>
+              <label for="formFileLg" class="form-label">Pan Card</label>
+              <input class="form-control form-control-lg" id="formFileLg" type="file">
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-primary" onclick="resume()" type="submit">Submit</button>
             </div>
           </form>
-          <div class="container" id="output">
-            <img src="/users/habiballadin/documents/company/company/appstor.PNG" height="150px" width="150px" align="right" alt="habib it solution">
+          <div class="container" id="resume">
+            <img src="file:///C:/Users/user33/Desktop/habib.jfif" width="100px" height="100px" align="right">
 <div class="My Resume"> 
 <center><h2>MY Resume</h2></center>
 <b id="Name">Name:</b><br>
 <b id="EmailId">EmailId:</b><br>
+<b id="DOB">DateOfBirth:</b>
 <u id="Phone no">Phone No:</u>
 <hr>
 </div>
